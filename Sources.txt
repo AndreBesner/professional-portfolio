@@ -3,3 +3,7 @@ Resources Used
 https://www.smashingmagazine.com/2018/08/flexbox-alignment/
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+
+https://pixabay.com/
+
+https://www.w3schools.com/
