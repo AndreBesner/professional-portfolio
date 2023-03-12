@@ -26,6 +26,28 @@ flex-wrap: wrap;
 column-gap: 15px;
 }
 
+/* makes header resonsive to screen size */
+@media screen and (max-width: 768px){
+    .flexbox-container-header{
+        width: 100%;
+    }
+    .push{
+        margin: 
+    }
+    .flexbox-container-body{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    h2{
+        font-size: auto;
+    }
+    h3{
+        border-right: black;
+    }
+}
+
 /* pushes content to far right of screen */
 .push{
     margin-left: auto;
@@ -37,6 +59,12 @@ column-gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.flexbox-container-images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
 }
 
 /* this holds the content in cool flex boxes that will have hover 
@@ -53,6 +81,27 @@ properties and be clickable */
 h3{
     padding-right: 15px;
     border-right: 1px solid white;
+}
+
+img{
+    width: 33%;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin-right: 2px;
+    border: #D9DBDE solid ;
+}
+
+img:hover{
+    width: 37%;
+}
+
+@media screen and (max-width: 768px){
+    img{
+        width:100%;
+    }
+    img:hover{
+        width:102%;
+    }
 }
 
 

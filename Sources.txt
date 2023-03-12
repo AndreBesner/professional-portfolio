@@ -7,3 +7,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Alignin
 https://pixabay.com/
 
 https://www.w3schools.com/
+
+https://blog.logrocket.com/responsive-image-gallery-css-flexbox/
+
