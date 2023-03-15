@@ -39,5 +39,51 @@
     .header-container .header-container-box{
         width: 100%;
     }
+    .header-container{
+        text-align: center;
+    }
 }
 /* End of Header Section Code */
+
+
+/* Projects Section */
+.projects-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+}
+
+.left-bar-projects{
+    width: 10%;
+    height: 100%;
+    text-align: end;
+    margin-right: 15px;
+}
+
+img{
+    object-fit: cover;
+}
+
+.projects{
+    width: 150px;
+    height: 150px;
+}
+
+.projects-first{
+    width: 300px;
+    height: 300px;
+}
+
+.projects-container:first-child{
+      width: 300px;
+      height: 300px;
+      border-style: solid black; 
+}
+
+@media only screen and (max-width 768px){
+    .left-bar-projects{
+        display: none;
+    }
+}
+/* End of Projects Section */
