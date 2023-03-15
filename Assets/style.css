@@ -1,0 +1,43 @@
+:root{
+    
+}
+
+*{
+
+}
+
+
+/* Header Section Code */
+/* Sets desktop header container to flex */
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* Pushes all content after main heading to far right */
+.header-container h1{
+    margin-right: auto;
+}
+
+.header-container-box{
+
+}
+/* makes header content align better on tablet screens */
+@media only screen and (max-width: 768px) {
+    .header-container{
+        justify-content: flex-start;
+    }
+    .header-container h1{
+    width: 100%;
+  }
+}
+/* fills content to screen on phone sizes */
+@media only screen and (max-width: 425px) {
+    .header-container .header-container-box{
+        width: 100%;
+    }
+}
+/* End of Header Section Code */
