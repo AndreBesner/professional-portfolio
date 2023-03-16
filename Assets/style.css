@@ -53,8 +53,6 @@
     size: var(--general-text-size);
     width: 90%;
     display: flex;
-    padding: 5px;
-    margin: 5px;
     align-items: center;
 }
 
@@ -80,20 +78,38 @@ h2{
 
 }
 
-/* sets first image to be larger than other */
+/* sets first image to be larger than other, makes relative to overlay text */
 .main-project-image{
     width: auto;
+    position: relative;
     max-height: 300px;
     padding: 5px;
     margin: 5px;
 }
 
-/* sets values for each project image after main */
-.project-image{
+/* sets values for each project image after main, makes relative to overlay text */
+.project-image, .project-image-2{
     width: auto;
+    position: relative;
     max-height: 150px;
     padding: 5px;
 }
+
+
+.floating-container{
+    position: relative;
+  }
+
+.floating-text{
+    font-size: var(--general-text-size);
+    color: var(--main-font-colour);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 /* End of main content section */
 
 /* makes header content align better on tablet screens */
