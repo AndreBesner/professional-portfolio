@@ -30,6 +30,7 @@
     font-size: var(--main-title-size);
 }
 
+/* This is for photo of Andre Besner aka me */
 .avatar{
     height: 100px;
     padding: 5px;
@@ -57,6 +58,8 @@
     align-items: center;
 }
 
+/* this is the left side bar that titles each section horizontally
+at first then stacks on top when viewing mobile */
 h2{
     color: var(--main-font-colour);
     font-size: var(--left-bar-size);
@@ -69,7 +72,7 @@ h2{
 }
 
 
-
+/* this is where the text for the about me and contact me sections live */
 .body-element{
     font-size: var(--general-text-size);
     padding: 5px;
