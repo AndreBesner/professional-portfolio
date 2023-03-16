@@ -1,5 +1,5 @@
 :root{
-    --main-font-colour:  ;
+    --main-font-colour: #dfdfdf   ;
     --main-title-size:  ;
     --quick-link-size:  ;
     --left-bar-size:  ;
@@ -14,30 +14,34 @@
 }
 
 
-/* Header Section Code */
+/* !!!Header Section Code!!! */
+
 /* Sets desktop header container to flex */
 .header-container{
     display: flex;
-    flex-wrap: wrap;
-    background-color: aqua;
     justify-content: space-around;
     align-items: center;
-
+    margin: 5px;
 }
 /* Pushes all content after main heading to far right */
 .header-container h1{
     margin-right: auto;
+    color: var(--main-font-colour);
 }
 
-.header-container-box{
-
+/* For modifying the quic link section and removes underline */
+.header-container a{
+    font-size: 20px;
+    text-decoration: none;
 }
+
 /* makes header content align better on tablet screens */
 @media only screen and (max-width: 768px) {
     .header-container{
-        justify-content: flex-start;
+        flex-direction: column;
     }
     .header-container h1{
+    text-align: center;
     width: 100%;
   }
 }
@@ -50,47 +54,22 @@
         text-align: center;
     }
 }
-/* End of Header Section Code */
+
+/* !!! End of Header Section Code!!!  */
+
+
+
+
+/* About Me */
+
+
+
+
+/* End of About Me */
 
 
 /* Projects Section */
-.projects-container{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    background-color: blueviolet;
-}
 
-.left-bar-projects{
-    width: 10%;
-    height: 100%;
-    text-align: end;
-    margin-right: 15px;
-}
+/* sets the display types for the overall sections of the website, about me, projects, etc */
 
-img{
-    object-fit: cover;
-}
-
-.projects{
-    width: 150px;
-    height: 150px;
-}
-
-.projects-first{
-    width: 300px;
-    height: 300px;
-}
-
-.projects-container:first-child{
-      width: 300px;
-      height: 300px;
-      border-style: solid black; 
-}
-
-@media only screen and (max-width 768px){
-    .left-bar-projects{
-        display: none;
-    }
-}
 /* End of Projects Section */
