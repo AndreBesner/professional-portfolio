@@ -7,12 +7,10 @@
     --footer-text-size:  ;
 }
 
-
 *{
     color: #DFDFDF;
     background-color: #1F1F1F;
 }
-
 
 /* !!!Header Section Code!!! */
 
@@ -48,12 +46,9 @@
 
 }
 
-/* !!! End of Header Section Code!!!  */
+/* Main section */
 
-
-
-
-/* About Me */
+/* sets each main section (about me, project, etc) of site as flex box */
 .main-content-section{
     size: var(--general-text-size);
     width: 90%;
@@ -85,37 +80,17 @@ h2{
 
 }
 
-
-
+/* sets first image to be larger than other */
 .main-project-image{
     width: auto;
-    max-height: 400px;
+    max-height: 300px;
 }
 
 .project-image{
     width: auto;
-    max-height: 200px;
+    max-height: 150px;
 }
-
-/* End of About Me */
-
-
-/* Projects Section */
-
-
-
-
-
-
-
-
-
-
-
-/* sets the display types for the overall sections of the website, about me, projects, etc */
-
-/* End of Projects Section */
-
+/* End of main content section */
 
 /* makes header content align better on tablet screens */
 @media only screen and (max-width: 768px) {
@@ -140,6 +115,10 @@ h2{
     flex: 1;
     border-right: #1F1F1F;
   }
+  .main-project-image{
+    width: 100%;
+}
+
 }
 /* fills content to screen on phone sizes */
 @media only screen and (max-width: 425px) {
