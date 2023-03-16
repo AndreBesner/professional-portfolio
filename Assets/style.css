@@ -84,11 +84,15 @@ h2{
 .main-project-image{
     width: auto;
     max-height: 300px;
+    padding: 5px;
+    margin: 5px;
 }
 
+/* sets values for each project image after main */
 .project-image{
     width: auto;
     max-height: 150px;
+    padding: 5px;
 }
 /* End of main content section */
 
@@ -115,9 +119,12 @@ h2{
     flex: 1;
     border-right: #1F1F1F;
   }
-  .main-project-image{
+  .main-project-image, .project-image{
     width: 100%;
+    padding: 1px;
+    margin: 1px;
 }
+
 
 }
 /* fills content to screen on phone sizes */
