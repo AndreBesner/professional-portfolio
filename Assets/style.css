@@ -99,8 +99,13 @@ h2{
     position: relative;
 }
 
+/* hover properties for certain elements */
 .floating-container:hover{
     transform: scale(1.01);
+}
+
+a:hover{
+    color: purple;
 }
 
 /* this is the pre-mentioned text, this overlays it on image  */
