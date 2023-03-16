@@ -43,6 +43,11 @@
     text-decoration: none;
 }
 
+/* sets header hyperlink IDs I dont know how to make this more efficient */
+#about-me, #projects, #contact-me{
+    
+}
+
 /* !!! End of Header Section Code!!!  */
 
 
