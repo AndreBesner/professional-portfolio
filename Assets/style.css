@@ -45,7 +45,7 @@
 
 /* sets header hyperlink IDs I dont know how to make this more efficient */
 #about-me, #projects, #contact-me{
-    
+
 }
 
 /* !!! End of Header Section Code!!!  */
@@ -87,10 +87,30 @@ h2{
 
 
 
+.main-project-image{
+    width: auto;
+    max-height: 400px;
+}
+
+.project-image{
+    width: auto;
+    max-height: 200px;
+}
+
 /* End of About Me */
 
 
 /* Projects Section */
+
+
+
+
+
+
+
+
+
+
 
 /* sets the display types for the overall sections of the website, about me, projects, etc */
 
