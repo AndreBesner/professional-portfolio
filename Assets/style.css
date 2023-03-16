@@ -5,12 +5,12 @@
     --left-bar-size:  ;
     --general-text-size:  ;
     --footer-text-size:  ;
-
 }
 
 
 *{
-
+    color: #DFDFDF;
+    background-color: #1F1F1F;
 }
 
 
