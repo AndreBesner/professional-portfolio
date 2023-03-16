@@ -1,0 +1,131 @@
+:root{
+    --main-font-colour: #dfdfdf   ;
+    --main-title-size: 50px ;
+    --quick-link-size: 30px ;
+    --left-bar-size: 30px ;
+    --general-text-size: 20px ;
+    --footer-text-size:  ;
+}
+
+*{
+    color: #DFDFDF;
+    background-color: #1F1F1F;
+}
+
+/* !!!Header Section Code!!! */
+
+/* Sets desktop header container to flex */
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+}
+/* Pushes all content after main heading to far right */
+.header-container h1{
+    margin-right: auto;
+    color: var(--main-font-colour);
+    font-size: var(--main-title-size);
+}
+
+/* This is for photo of Andre Besner aka me */
+.avatar{
+    height: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* For modifying the quic link section and removes underline */
+.header-container a{
+    font-size: var(--quick-link-size);
+    text-decoration: none;
+}
+
+/* sets header hyperlink IDs I dont know how to make this more efficient */
+#about-me, #projects, #contact-me{
+
+}
+
+/* Main section */
+
+/* sets each main section (about me, project, etc) of site as flex box */
+.main-content-section{
+    size: var(--general-text-size);
+    width: 90%;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+}
+
+/* this is the left side bar that titles each section horizontally
+at first then stacks on top when viewing mobile */
+h2{
+    color: var(--main-font-colour);
+    font-size: var(--left-bar-size);
+    flex: 0 0 150px;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 10px;
+    border-right: solid #DFDFDF;
+    text-align: end;
+}
+
+
+/* this is where the text for the about me and contact me sections live */
+.body-element{
+    font-size: var(--general-text-size);
+    padding: 5px;
+    margin: 5px;
+
+}
+
+/* sets first image to be larger than other */
+.main-project-image{
+    width: auto;
+    max-height: 300px;
+}
+
+.project-image{
+    width: auto;
+    max-height: 150px;
+}
+/* End of main content section */
+
+/* makes header content align better on tablet screens */
+@media only screen and (max-width: 768px) {
+    .header-container{
+        flex-direction: column;
+    }
+    .header-container h1{
+    text-align: center;
+    width: 100%;
+  }
+    .avatar{
+    width: 100%;
+    height: 100%;
+    }
+  .main-content-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  h2{
+    flex: 1;
+    border-right: #1F1F1F;
+  }
+  .main-project-image{
+    width: 100%;
+}
+
+}
+/* fills content to screen on phone sizes */
+@media only screen and (max-width: 425px) {
+    .header-container .header-container-box{
+        width: 100%;
+    }
+    .header-container{
+        text-align: center;
+    }
+}
