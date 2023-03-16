@@ -4,9 +4,9 @@
     --quick-link-size: 30px ;
     --left-bar-size: 30px ;
     --general-text-size: 20px ;
-    --footer-text-size:  ;
 }
 
+/* Always dark mode */
 *{
     color: #DFDFDF;
     background-color: #1F1F1F;
@@ -35,7 +35,7 @@
     margin: 5px;
 }
 
-/* For modifying the quic link section and removes underline */
+/* For modifying the quick link section and removes underline */
 .header-container a{
     font-size: var(--quick-link-size);
     text-decoration: none;
@@ -43,7 +43,6 @@
 
 /* sets header hyperlink IDs I dont know how to make this more efficient */
 #about-me, #projects, #contact-me{
-
 }
 
 /* Main section */
@@ -95,11 +94,12 @@ h2{
     padding: 5px;
 }
 
-
+/* puts each of the boxes that hold the image and link as a relative box so you can position text absolute over just this parent */
 .floating-container{
     position: relative;
-  }
+}
 
+/* this is the pre-mentioned text, this overlays it on image  */
 .floating-text{
     font-size: var(--general-text-size);
     color: var(--main-font-colour);
@@ -108,43 +108,41 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-
+}
 /* End of main content section */
 
+/* Media Queries */
 /* makes header content align better on tablet screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
     .header-container{
         flex-direction: column;
     }
     .header-container h1{
-    text-align: center;
-    width: 100%;
-  }
-    .avatar{
-    width: 100%;
-    height: 100%;
+        text-align: center;
+        width: 100%;
     }
-  .main-content-section{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  h2{
-    flex: 1;
-    border-right: #1F1F1F;
-  }
-  .main-project-image, .project-image{
-    width: 100%;
-    padding: 1px;
-    margin: 1px;
-}
-
-
+    .avatar{
+        width: 100%;
+        height: 100%;
+    }
+    .main-content-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    h2{
+        flex: 1;
+        border-right: #1F1F1F;
+    }
+    .main-project-image, .project-image{
+        width: 100%;
+        padding: 1px;
+        margin: 1px;
+    }
 }
 /* fills content to screen on phone sizes */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px){
     .header-container .header-container-box{
         width: 100%;
     }
