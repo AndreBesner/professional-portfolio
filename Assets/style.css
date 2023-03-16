@@ -99,6 +99,10 @@ h2{
     position: relative;
 }
 
+.floating-container:hover{
+    transform: scale(1.01);
+}
+
 /* this is the pre-mentioned text, this overlays it on image  */
 .floating-text{
     font-size: var(--general-text-size);
