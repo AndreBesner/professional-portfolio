@@ -1,9 +1,9 @@
 :root{
     --main-font-colour: #dfdfdf   ;
-    --main-title-size:  ;
-    --quick-link-size:  ;
-    --left-bar-size:  ;
-    --general-text-size:  ;
+    --main-title-size: 50px ;
+    --quick-link-size: 30px ;
+    --left-bar-size: 30px ;
+    --general-text-size: 25px ;
     --footer-text-size:  ;
 }
 
@@ -27,11 +27,12 @@
 .header-container h1{
     margin-right: auto;
     color: var(--main-font-colour);
+    font-size: var(--main-title-size);
 }
 
 /* For modifying the quic link section and removes underline */
 .header-container a{
-    font-size: 20px;
+    font-size: var(--quick-link-size);
     text-decoration: none;
 }
 
@@ -61,7 +62,19 @@
 
 
 /* About Me */
+.main-content-section{
+    width: 80%;
+    display: flex;
+}
 
+h2{
+    color: var(--main-font-colour);
+    width: 100px;
+}
+
+.body-element{
+
+}
 
 
 
