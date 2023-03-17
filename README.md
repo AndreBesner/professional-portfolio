@@ -44,6 +44,8 @@ https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-s
 Super special thanks to 
 https://stackoverflow.com/questions/41789278/first-child-full-width-in-flexbox
 
+Understanding Overlaying text on images was taught using open ai's chat gpt
+
 Daler Singh - BootCamp Instructor
 
 Adam Nyx - BootCamp Instructor
